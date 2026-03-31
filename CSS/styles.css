@@ -1,0 +1,149 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5efe6;
+    color:#5a4633;
+    text-align:center;
+}
+
+/* HEADER */
+header{
+    background:#d6c3a3;
+    padding:20px;
+}
+
+/* NAV */
+nav{
+    background:#e8dcc7;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    position:relative;
+}
+
+nav a{
+    text-decoration:none;
+    color:#6b4f3b;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#3e2c1c;
+}
+
+/* ICONOS */
+.iconos{
+    position:absolute;
+    right:20px;
+    font-size:20px;
+}
+
+/* SECCIONES */
+section{
+    padding:30px;
+}
+
+/* PRODUCTOS */
+.productos{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/* CARD */
+.card{
+    width:180px;
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    position:relative;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* TITULO PRODUCTO */
+.card h3{
+    margin:0;
+    padding:10px;
+    background:#e8dcc7;
+    font-size:14px;
+}
+
+/* IMG */
+.card img{
+    width:100%;
+}
+.overlay{
+    position:absolute;
+    bottom:-100%; /* empieza oculto abajo */
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:10px;
+    transition:0.4s;
+}
+
+.card:hover .overlay{
+    bottom:0; /* sube al hacer hover */
+}
+
+/* MULTIMEDIA */
+audio, video{
+    margin:10px;
+    border-radius:10px;
+}
+
+/* FORMULARIO */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:300px;
+    margin:auto;
+}
+
+input, select{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+input[type="submit"]{
+    background:#d6c3a3;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#b89b72;
+}
+
+/* FOOTER */
+footer{
+    background:#e8dcc7;
+    padding:20px;
+}
+a{
+    text-decoration: none;
+    color: inherit; /* usa el color del contenedor */
+}
+
+a:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+<link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+<nav>
+<a href="../index.html">HOME</a>
+<a href="productos.html">PRODUCTOS</a>
+<a href="multimedia.html">MULTIMEDIA</a>
+<a href="formulario.html">REGISTRO</a>
+<a href="contacto.html">CONTÁCTENOS</a>
+</nav>
+
+<section>
+<h2>Formulario de registro KATIVA</h2>
+
+<form action="Kativa.php" method="get">
+
+<label>Usuario:</label>
+<input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+
+<label>Fecha:</label>
+<input type="date" name="fecha" required>
+
+<label>Contraseña:</label>
+<input type="password" name="clave" required>
+
+<label>Productos:</label>
+<select name="Productos">
+<option value="">Seleccione</option>
+<option>Shampoo</option>
+<option>Acondicionador</option>
+<option>Mascarillas</option>
+<option>Aceite de Árgan</option>
+</select>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+</section>
+
+</body>
+</html>
